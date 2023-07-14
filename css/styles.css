@@ -1,0 +1,153 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #bfd8d935;
+  color: #263f40;
+
+  ::selection {
+    background-color: #263f40;
+    color: whitesmoke;
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+header > img {
+  height: 80px;
+  margin: 5px auto;
+}
+
+nav {
+  border-bottom: 1px solid cadetblue;
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+}
+
+nav ul li {
+  margin: 0px 10px;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 200;
+  color: inherit;
+  letter-spacing: 1px;
+}
+
+.promo {
+  margin-top: 40px;
+  background-image: url("https://images.unsplash.com/photo-1507561362254-a23d256d8e71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.promo h2 {
+  letter-spacing: 2px;
+}
+
+.promo p {
+  font-size: 0.7rem;
+  padding: 10px 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.main article {
+  display: flex;
+  flex-direction: column;
+  background-color: #bfd8d9;
+  width: 30%;
+  min-width: 150px;
+  margin: 10px;
+  padding: 0 15px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.main article img {
+  border-radius: 10px;
+}
+
+.main ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+.main a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.more-menu,
+.book-table {
+  margin-top: auto;
+  font-size: 0.7rem;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  height: 80px;
+}
+footer p {
+  width: 50%;
+  text-align: right;
+  padding-top: 10px;
+  font-size: 0.6rem;
+  border-top: 1px solid #4c7e80;
+}
+
+/* Extra small devices (phones, 650px and down) */
+
+@media only screen and (max-width: 650px) {
+  nav {
+    border: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 5px;
+    border-bottom: 1px dotted #263f40;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main article {
+    width: auto;
+  }
+  .main article img {
+    margin: auto 10px;
+  }
+}
